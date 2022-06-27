@@ -16,7 +16,8 @@ function openPage(pageName, elmnt, color)
   document.getElementById(pageName).style.display = "block";
   elmnt.style.backgroundColor = color;
 }
-
+function openWork()
+{
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -35,6 +36,7 @@ for (i = 0; i < acc.length; i++)
       panel.style.display = "block";
     }
   });
+}
 }
 
 function openSchool(evt, schoolName) 
