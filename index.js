@@ -1,23 +1,3 @@
-function openPage(pageName, elmnt, color) 
-{
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) 
-  {
-    tabcontent[i].style.display = "none";
-  }
-
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) 
-  {
-    tablinks[i].style.backgroundColor = "";
-  }
-
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-function openWork()
-{
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -37,7 +17,28 @@ for (i = 0; i < acc.length; i++)
     }
   });
 }
+
+function openPage(pageName, elmnt, color) 
+{
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) 
+  {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) 
+  {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
 }
+
+
+
 
 function openSchool(evt, schoolName) 
 {
