@@ -16,13 +16,8 @@ function openPage(pageName, elmnt, color)
   document.getElementById(pageName).style.display = "block";
   elmnt.style.backgroundColor = color;
 }
-const accordion = document.getElementsByClassName("container");
-for (i=0; i<accordion.length; i++) 
-{
-  accordion[i].addEventListener("click", function () {
-    this.classList.toggle("active")
-  });
-}
+
+
 
 function openSchool(evt, schoolName) 
 {
@@ -42,4 +37,12 @@ function openSchool(evt, schoolName)
 
   document.getElementById(schoolName).style.display = "block";
   evt.currentTarget.className += "active";
+}
+
+const accordion = document.getElementsByClassName("container");
+for (i=0; i<accordion.length; i++) 
+{
+  accordion[i].addEventListener("click", function () {
+    this.classList.toggle("active")
+  });
 }
