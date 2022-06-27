@@ -126,7 +126,7 @@ body, html {
   background-color: white;
   display: none;
   overflow: hidden;
-  color:black;
+ 
   max-height: 0;
   transition: max-height 0.2s ease-out;
 }
