@@ -39,10 +39,18 @@ function openSchool(evt, schoolName)
   evt.currentTarget.className += "active";
 }
 
-const accordion = document.getElementsByClassName("container");
-for (i=0; i<accordion.length; i++) 
-{
-  accordion[i].addEventListener("click", function () {
-    this.classList.toggle("active")
-  });
-}
+const accordionBtns = document.querySelectorAll(“.accordion”);
+accordionBtns.forEach((accordion) => {
+  accordion.onclick = function () {
+    
+    this.classList.toggle(“is-open”);
+    let content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      //this is if the accordion is open
+      content.style.maxHeight = null;
+    } else {
+      //if the accordion is currently closed
+      content.style.maxHeight = content.scrollHeight + “px”;
+    }
+  };
+});
