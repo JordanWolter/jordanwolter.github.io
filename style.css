@@ -104,81 +104,44 @@ body, html {
   background-image:url(https://media.gettyimages.com/photos/network-forming-ai-robot-face-picture-id1189020673?s=2048x2048)
 }
 
-.accordion {
-  width: 800px;
-  margin: 90px auto;
-  color: black;
-  background-color: white;
-  padding: 45px 45px;
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin:50px auto;
 }
-
-
-.accordion .container {
-  position: relative;
-  margin: 10px 10px;
-}
-
-/* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
-
-.accordion .label {
-  position: relative;
-  padding: 10px 0;
-  font-size: 30px;
-  color: black;
+button.accordion {
+  width: 100%;
+  background-color: whitesmoke;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 18px;
+  color: #333;
   cursor: pointer;
+  transition: background-color 0.2s linear;
 }
-
-
-
-/* Positions the plus sign 5px from the right. Centers it using the transform property. */
-
-.accordion .label::before {
-  content: '+';
-  color: black;
-  position: absolute;
-  top: 50%;
-  right: -5px;
-  font-size: 30px;
-  transform: translateY(-50%);
+button.accordion:after {
+  font-family: FontAwesome;
+  content: '\f150';
+  font-family: "fontawesome";
+  font-size: 14px;
+  float: right;
 }
-
-/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
-
-.accordion .content {
-  position: relative;
-  background: white;
-  height: 0;
-  font-size: 20px;
-  text-align: justify;
-  width: 780px;
-  overflow: hidden;
-  transition: 0.5s;
+button.accordion.is-open:after {
+  content: '\f056';
 }
-
-/* Adds a horizontal line between the contents */
-
-.accordion hr {
-  width: 100;
-  margin-left: 0;
-  border: 1px solid grey;
+button.accordion:hover, button.accordion.is-open {
+  background-color: #ddd;
 }
-
-
-
-
-
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-.panel {
-  padding: 0 18px;
+.accordion-content {
   background-color: white;
-  display: none;
-  overflow: hidden;
-  color:black;
+  border-left: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+  padding: 0 20px;
   max-height: 0;
-  transition: max-height 0.2s ease-out;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
 }
 
 * {box-sizing: border-box}
