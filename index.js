@@ -17,7 +17,7 @@ function openPage(pageName, elmnt, color)
   elmnt.style.backgroundColor = color;
 }
 
-const accordion = document.getElementsByClassName("accordion");
+const accordion = document.getElementsByClassName("container");
 
 for (i=0; i<accordion.length; i++) {
   accordion[i].addEventListener('click', function () {
