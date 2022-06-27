@@ -16,10 +16,9 @@ function openPage(pageName, elmnt, color)
   document.getElementById(pageName).style.display = "block";
   elmnt.style.backgroundColor = color;
 }
-
 const accordion = document.getElementsByClassName("container");
-
-for (i=0; i<accordion.length; i++) {
+for (i=0; i<accordion.length; i++) 
+{
   accordion[i].addEventListener("click", function () {
     this.classList.toggle("active")
   })
