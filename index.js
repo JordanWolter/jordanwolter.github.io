@@ -26,7 +26,7 @@ for (i = 0; i < acc.length; i++)
   {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
-    if (panel.style.display == "block") 
+    if (panel.style.display === "block") 
     {
       panel.style.display = "none";
     } 
