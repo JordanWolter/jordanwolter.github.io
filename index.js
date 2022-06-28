@@ -43,7 +43,7 @@ function openSchool(event, schoolName) {
 
   tabstuff = document.getElementsByClassName("tabstuff");
   for (i = 0; i < tabstuff.length; i++) {
-    tabstuff[i].className = tabstuff[i].className.replace("active");
+    tabstuff[i].className = tabstuff[i].className.replace("active","block");
   }
 
   document.getElementById(schoolName).style.display = "block";
