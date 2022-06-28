@@ -39,7 +39,7 @@ function openSchool(evt, schoolName)
   evt.currentTarget.className += "active";
 }
 
-const accordionBtns = document.querySelectorAll(“.accordion”);
+const accordionBtns = document.querySelectorAll(“accordion”);
 accordionBtns.forEach((accordion) => {
   accordion.onclick = function () {
     
