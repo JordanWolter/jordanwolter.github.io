@@ -14,7 +14,7 @@ function openPage(pageName, elmnt, color) {
   elmnt.style.backgroundColor = color;
 }
 
-function openWork(workName)
+function openWork(workName, panel)
 {
 var acc = document.getElementsByClassName("accordion");
 var i;
