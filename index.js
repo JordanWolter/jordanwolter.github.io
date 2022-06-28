@@ -32,7 +32,7 @@ for (i = 0; i < acc.length; i++) {
 }
 }
 
-function openSchool(event, schoolName) {
+function openSchool(evt, schoolName) {
   var i, tabschool, tabstuff
  
   tabschool = document.getElementsByClassName("tabschool");
