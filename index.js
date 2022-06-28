@@ -33,7 +33,7 @@ for (i = 0; i < acc.length; i++) {
 }
 
 function openSchool(evt, schoolName) {
-  var i, tabschool, tabstuff
+  var i, tabschool, tabstuff, evt
  
   tabschool = document.getElementsByClassName("tabschool");
   for (i = 0; i < tabschool.length; i++) {
