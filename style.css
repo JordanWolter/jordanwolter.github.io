@@ -104,44 +104,29 @@ body, html {
   background-image:url(https://media.gettyimages.com/photos/network-forming-ai-robot-face-picture-id1189020673?s=2048x2048)
 }
 
-.container {
-  width: 80%;
-  max-width: 600px;
-  margin:50px auto;
-}
-button.accordion {
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
   width: 100%;
-  background-color: whitesmoke;
+  text-align: left;
   border: none;
   outline: none;
-  text-align: left;
-  padding: 15px 20px;
-  font-size: 18px;
-  color: #333;
-  cursor: pointer;
-  transition: background-color 0.2s linear;
+  transition: 0.4s;
+  font-size:40px;
 }
-button.accordion:after {
-  font-family: FontAwesome;
-  content: '\f150';
-  font-family: "fontawesome";
-  font-size: 14px;
-  float: right;
+
+.active, .accordion:hover {
+  background-color: #ccc;
 }
-button.accordion.is-open:after {
-  content: '\f056';
-}
-button.accordion:hover, button.accordion.is-open {
-  background-color: #ddd;
-}
-.accordion-content {
+
+.panel {
+  padding: 0 18px;
   background-color: white;
-  border-left: 1px solid whitesmoke;
-  border-right: 1px solid whitesmoke;
-  padding: 0 20px;
-  max-height: 0;
+  display: none;
   overflow: hidden;
-  transition: max-height 0.2s ease-in-out;
+  color:black;
 }
 
 * {box-sizing: border-box}
