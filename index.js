@@ -14,6 +14,8 @@ function openPage(pageName, elmnt, color) {
   elmnt.style.backgroundColor = color;
 }
 
+function openWork(workName)
+{
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -28,8 +30,9 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+}
 
-function openSchool(evt, schoolName) {
+function openSchool(event, schoolName) {
   var i, tabschool, tabstuff
  
   tabschool = document.getElementsByClassName("tabschool");
