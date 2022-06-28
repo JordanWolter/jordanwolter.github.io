@@ -32,8 +32,9 @@ for (i = 0; i < acc.length; i++) {
 }
 }
 
-function openSchool(evt, schoolName) {
-  var i, tabschool, tabstuff, evt
+function openSchool(event, schoolName) {
+  var i, tabschool, tabstuff
+  var event
  
   tabschool = document.getElementsByClassName("tabschool");
   for (i = 0; i < tabschool.length; i++) {
@@ -46,5 +47,5 @@ function openSchool(evt, schoolName) {
   }
 
   document.getElementById(schoolName).style.display = "block";
-  evt.currentTarget.className += "active";
+  event.currentTarget.className += "active";
 }
